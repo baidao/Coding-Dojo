@@ -6,5 +6,6 @@ describe 'test abc', ->
 
   it 'abc return value type should be a string', ->
     abc().should.to.be.a('string')
+    
   it 'abc return value type should be "superwolf"', ->
     abc().should.to.equal('superwolf')
