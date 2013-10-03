@@ -9,3 +9,7 @@ describe 'test abc', ->
 
   it 'abc return value type should be "hello dojo"', ->
     abc().should.to.equal('hello dojo')
+
+  it 'abc return value type should be "hello dojo"', ->
+    abc().should.to.equal('hello dojo1')
+    abc().should.to.equal('hello dojo2')
