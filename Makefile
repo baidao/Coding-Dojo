@@ -18,7 +18,7 @@ test-xunit-file:
 		$(TESTS) > output.xml
 
 test-xunit:
-	@NODE_ENV=test git checkout ${BRANCH} > output.log
+	@NODE_ENV=test git checkout ${BRANCH} & git rebase > output.log
 	@NODE_ENV=test ./node_modules/mocha/bin/mocha \
 		--compilers coffee:coffee-script \
 		--reporter  xunit \
