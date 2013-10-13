@@ -43,6 +43,9 @@ describe 'test fizz', ->
   it "when input is 12 fizzItem should return ['fizz','fizz', 'fizz']",->
     fizz.fizzItem(12).should.eql(['fizz'])
 
+  it "when input is [1..100] results.length should equal 114",->
+    fizz.fizzFactory([1..100]).length.should.equal(114)
+
 
 
 
