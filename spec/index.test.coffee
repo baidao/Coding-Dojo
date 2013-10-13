@@ -37,6 +37,17 @@ describe 'test fizz', ->
   it "when input is 3 fizzItem should return ['fizz','fizz', 'fizz']",->
     fizz.fizzItem(3).should.eql(['fizz','fizz', 'fizz'])
 
+  it "when input is [1,3] fizzFactory should return [1,'fizz','fizz', 'fizz']",->
+    fizz.fizzFactory([1,3]).should.eql([1,'fizz','fizz', 'fizz'])
+
+  it "when input is 12 fizzItem should return ['fizz','fizz', 'fizz']",->
+    fizz.fizzItem(12).should.eql(['fizz'])
+
+
+  # it "when input is [1,23,12] fizzFactory should return [1,'fizz','fizz', 'fizz']",->
+  #   fizz.fizzFactory([1,23,12]).should.eql([1,'fizz','fizz', 'fizz'])
+
+
   # it 'fizzFactory should replace element to fizz when index%3 is 0', ->
   #   input = [1...99]
   #   result = fizz.fizzFactory(input)
