@@ -63,3 +63,22 @@ describe 'test fizz', ->
   #     result[index].should.eql(input[index])
 
 
+describe "test books",->
+  books = require '../src/books'
+
+  testdata = [
+    [1,0,0,0,0], 1
+    [1,1,0,0,0], 1.9
+    [1,1,1,0,0], 2.7
+    [1,1,1,1,0], 3.2
+    [1,1,1,1,1], 3.75
+    [2,2,2,1,1], 6.4
+    [2,2,2,4,1], 8.95
+  ]
+
+  for item, i in testdata by 2
+    input = testdata[i]
+    expect = testdata[i + 1]
+    it "buy books: #{input} should cost #{expect}", ->
+      books.totalPrice(input).should.eql(expect)
+
