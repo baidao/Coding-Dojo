@@ -30,8 +30,14 @@ describe 'test fizz', ->
     fizzFactory.fizzFactory([1...99]).length.should.equal([1...99].length)
 
   it 'fizzFactory should replace element to fizz when index%3 is 0', ->
-    result = fizzFactory.fizzFactory([1...99])
+    input = [1...99]
+    result = fizzFactory.fizzFactory(input)
     index = parseInt Math.random()*100
-    if [1...99][index]%3 is 0
+    if input[index]%3 is 0
       result[index].should.equal("fizz")
+    else
+      result[index].should.eql(input[index])
+
+  # it "should input an array ",->
+    # fizzFactory.fizzFactory("1,2,3,4,5").should.equal("[must input an array]")
 
