@@ -44,6 +44,8 @@ describe 'test fizz', ->
     fizz.fizzItem(12).should.eql(['fizz'])
 
 
+
+
   # it "when input is [1,23,12] fizzFactory should return [1,'fizz','fizz', 'fizz']",->
   #   fizz.fizzFactory([1,23,12]).should.eql([1,'fizz','fizz', 'fizz'])
 
