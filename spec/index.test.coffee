@@ -16,28 +16,34 @@ require('chai').should()
 
 
 describe 'test fizz', ->
-  fizzFactory = require '../src/fizz'
-  it '1 should return 1', ->
-    fizzFactory.fizzFactory([1]).should.eql([1])
+  fizz = require '../src/fizz'
 
-  it "fizzFactory should return [1,2,fizz] when input is [1,2,3] ", ->
-    fizzFactory.fizzFactory([1,2,3]).should.eql([1,2,'fizz'])
+  it '1 should return 1', ->
+    fizz.fizzFactory([1]).should.eql([1])
+
+  it "when input is [1,2,3] fizzFactory should return [1,2,'fizz','fizz','fizz'] ", ->
+    fizz.fizzFactory([1,2,3]).should.eql([1,2,'fizz','fizz','fizz'])
 
   it "should return an array", ->
-    fizzFactory.fizzFactory(1).should.to.be.a('array')
+    fizz.fizzFactory(1).should.to.be.a('array')
 
   it "resuls length should equal the input array's length",->
-    fizzFactory.fizzFactory([1...99]).length.should.equal([1...99].length)
+    fizz.fizzFactory([1...99]).length.should.to.be.above([1...99].length)
 
-  it 'fizzFactory should replace element to fizz when index%3 is 0', ->
-    input = [1...99]
-    result = fizzFactory.fizzFactory(input)
-    index = parseInt Math.random()*100
-    if input[index]%3 is 0
-      result[index].should.equal("fizz")
-    else
-      result[index].should.eql(input[index])
+  it "when input is 13 fizzItem should return ['fizz','fizz']",->
+    fizz.fizzItem(13).should.eql(['fizz','fizz'])
 
-  # it "should input an array ",->
-    # fizzFactory.fizzFactory("1,2,3,4,5").should.equal("[must input an array]")
+
+  it "when input is 3 fizzItem should return ['fizz','fizz', 'fizz']",->
+    fizz.fizzItem(3).should.eql(['fizz','fizz', 'fizz'])
+
+  # it 'fizzFactory should replace element to fizz when index%3 is 0', ->
+  #   input = [1...99]
+  #   result = fizz.fizzFactory(input)
+  #   index = parseInt Math.random()*100
+  #   if input[index]%3 is 0
+  #     result[index].should.equal("fizz")
+  #   else
+  #     result[index].should.eql(input[index])
+
 
