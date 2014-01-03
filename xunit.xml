@@ -1,3 +1,0 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Fri, 03 Jan 2014 02:15:43 GMT" time="0.007">
-<testcase classname="index" name="Should exports &quot;abc&quot;" time="0.003"/>
-</testsuite>
