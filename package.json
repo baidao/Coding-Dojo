@@ -9,7 +9,8 @@
   "dependencies": {
     "chai": "~1.8.0",
     "coffee-script": "~1.6.3",
-    "sinon": "~1.7.3"
+    "sinon": "~1.7.3",
+    "request": "~2.39.0"
   },
   "devDependencies": {
     "mocha": "~1.13.0"
