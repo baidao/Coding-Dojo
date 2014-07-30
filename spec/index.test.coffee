@@ -6,6 +6,6 @@ describe 'index', ->
     abc = require('../src/index')
     expect(abc()).to.eql "hello dojo"
 
-  it 'Should exports "abc" 123', ->
-    abc = require('../src/index')
-    expect(abc()).to.eql "hello dojo"
+  # it 'Should exports "abc" 123', ->
+  #   abc = require('../src/index')
+  #   expect(abc()).to.eql "hello dojo"
