@@ -1,8 +1,10 @@
 #环境准备
 1. [node.js](nodejs.org)
-*  git clone .......
+*  git clone git@github.com:baidao/Coding-Dojo.git
+*  git checkout -b [NewBranchName]
 *  npm install
 *  make test
+*  git push -u origin [NewBranchName]
 
 #所需网站
 1. [mocha](http://mochajs.org/)
