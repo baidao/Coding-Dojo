@@ -14,7 +14,7 @@
 *  [thenjs](https://github.com/teambition/then.js)
 
 #TDD以及要求
-1. TDD概念
+1. [TDD概念](http://baike.baidu.com/link?url=QdA4J-9MhOs5-q2to5xdZ_Ps3YVgbNd5EOf8lI7-Tdw59K_DecKf4fJRAGUlOFwwhA98y38NhYw56748DJ1VTH4b-HfDPcTIWHj63wRFMC7)
 *  流程: 测试-红-代码-绿
 *  不要使用else语句
 *  不要使用for语句
