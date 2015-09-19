@@ -1,5 +1,3 @@
-output.log
-output.xml
 xunit.xml
 dump.rdb
 node_modules

@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "chai": "~1.8.0",
-    "coffee-script": "~1.6.3",
-    "request": "~2.39.0",
+    "lodash": "^3.10.1",
     "sinon": "~1.7.3",
     "thenjs": "^2.0.1"
   },
