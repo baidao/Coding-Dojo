@@ -20,7 +20,7 @@
 *  不要使用for语句
 *  不要使用if或者switch语句
 
-#练习-KataPotter
+#[练习-KataPotter](http://www.codingdojo.org/cgi-bin/index.pl?action=browse&id=KataPotter&revision=41)
 1. 哈利波特一套有5本书，每本单价8块钱
 *  买两本不同的书，5%折扣
 *  买三本不同的书，10%折扣
