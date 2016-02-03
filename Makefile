@@ -1,7 +1,7 @@
-TESTS = spec/*.js
+TESTS = test/*.js
 TIMEOUT = 1000
 
-test:
+t:
 	@NODE_ENV=test ./node_modules/mocha/bin/mocha \
 		--reporter spec \
 		--timeout $(TIMEOUT) \
