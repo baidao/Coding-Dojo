@@ -13,7 +13,7 @@
     "thenjs": "^2.0.1"
   },
   "devDependencies": {
-    "mocha": "latest",
+    "mocha": "~1.13.0",
     "xunit-file": "latest"
   },
   "directories": {
